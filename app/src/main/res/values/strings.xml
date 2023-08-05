@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">HappyTail App</string>
+    <string name="skip">Skip</string>
+    <string name="back">Back</string>
+    <string name="next">Next</string>
+    <string name="reco_title">Personalized Pet Recommendations</string>
+    <string name="reco_text">Upon sign-up, you\'ll be asked to take a short suitability test. This questionnaire will help us understand your lifestyle, preferences, and living situation. Based on your responses, we\'ll recommend pets that best match your lifestyle and ensure a successful adoption journey.</string>
+    <string name="adoption_title">Adoption and Donation</string>
+    <string name="adoption_text">Discover and adopt adorable pets from rescue shelters with ease. Connect and initiate the adoption process in just a few taps. Even if you can\'t adopt now, you can still make a positive impact by supporting shelters through donations. .</string>
+    <string name="blog_title">Blog Articles and Pet Care Tips</string>
+    <string name="blog_text">Stay informed with our pet-centric blog. Discover valuable insights and tips on pet care, training, health, and heartwarming adoption success stories. Ensure your pet\'s well-being and happiness, whether you\'re a first-time pet parent or an experienced animal lover. </string>
+    <string name="next_symbol"><![CDATA[>]]></string>
+    <string name="back_symbol"><![CDATA[<]]></string>
 </resources>
