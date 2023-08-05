@@ -6,6 +6,8 @@
     <color name="accent_orange">#F0801A</color>
     <color name="card_cream">#FFECD5</color>
     <color name="card_light">#FFF3E5</color>
+    <color name="indicator_active">#4A5759</color>
+    <color name="indicator_inactive">#8B9EA1</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 </resources>
