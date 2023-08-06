@@ -11,4 +11,14 @@
     <string name="blog_text">Stay informed with our pet-centric blog. Discover valuable insights and tips on pet care, training, health, and heartwarming adoption success stories. Ensure your pet\'s well-being and happiness, whether you\'re a first-time pet parent or an experienced animal lover. </string>
     <string name="next_symbol"><![CDATA[>]]></string>
     <string name="back_symbol"><![CDATA[<]]></string>
+    <string name="let_s_get_started">Let\'s get started!</string>
+    <string name="sign_up">Sign up</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="login">Login</string>
+    <string name="name">Name</string>
+    <string name="enter_full_name">Full Name</string>
+    <string name="email">Email</string>
+    <string name="example_domain_com">example@domain.com</string>
+    <string name="password">Password</string>
+    <string name="pass_hint">********</string>
 </resources>
