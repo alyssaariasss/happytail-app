@@ -8,29 +8,39 @@
     tools:context=".Signup">
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/backdrop"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:scaleX="1.15"
-        android:scaleY="1.33"
+        android:scaleX="1.1"
+        android:scaleY="1.2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/signup_page" />
+        app:srcCompat="@drawable/backdrop2" />
+
+    <ImageView
+        android:layout_width="280dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/animal_dog1"
+        app:layout_constraintBottom_toBottomOf="@+id/backdrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/quicksand_bold"
-        android:text="@string/let_s_get_started"
+        android:text="@string/sign_up"
         android:textColor="@color/primary_blue"
         android:textSize="32sp"
         android:layout_marginTop="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+        app:layout_constraintTop_toBottomOf="@+id/backdrop" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -68,6 +78,7 @@
                 android:background="@drawable/input_text"
                 android:fontFamily="@font/sourcesanspro_regular"
                 android:hint="@string/enter_full_name"
+                android:textColorHint="@color/indicator_inactive"
                 android:inputType="textPersonName"
                 android:paddingStart="25dp"
                 android:paddingEnd="25dp"
@@ -95,10 +106,11 @@
                 android:layout_height="48dp"
                 android:layout_marginHorizontal="40dp"
                 android:layout_marginTop="10dp"
-                android:autofillHints="emailAddress"
+                android:autofillHints="@null"
                 android:background="@drawable/input_text"
                 android:fontFamily="@font/sourcesanspro_regular"
                 android:hint="@string/example_domain_com"
+                android:textColorHint="@color/indicator_inactive"
                 android:inputType="textEmailAddress"
                 android:paddingStart="25dp"
                 android:paddingEnd="25dp"
@@ -120,23 +132,37 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/emailInput" />
 
-            <EditText
-                android:id="@+id/passwordInput"
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/passwordLayout"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:layout_marginHorizontal="40dp"
                 android:layout_marginTop="10dp"
-                android:autofillHints="password"
-                android:background="@drawable/input_text"
+                android:ems="10"
                 android:fontFamily="@font/sourcesanspro_regular"
-                android:hint="@string/pass_hint"
-                android:inputType="textPassword"
-                android:paddingStart="25dp"
-                android:paddingEnd="25dp"
                 android:textColor="@color/black"
-                android:textSize="16sp"
+                android:textSize="15sp"
+                app:hintEnabled="false"
                 app:layout_constraintStart_toEndOf="@+id/passwordTitle"
-                app:layout_constraintTop_toBottomOf="@+id/passwordTitle" />
+                app:layout_constraintTop_toBottomOf="@+id/passwordTitle"
+                app:endIconMode="password_toggle"
+                app:endIconTint="@color/accent_orange">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Password1"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/input_text"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:paddingStart="25dp"
+                    android:paddingTop="0dp"
+                    android:paddingEnd="0dp"
+                    android:paddingBottom="2dp"
+                    android:textColorHint="@color/indicator_inactive"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"/>
+            </com.google.android.material.textfield.TextInputLayout>
 
             <Button
                 android:id="@+id/signupButton"
@@ -150,9 +176,9 @@
                 android:textColor="@color/white"
                 android:textSize="18sp"
                 app:backgroundTint="@color/accent_orange"
-                app:layout_constraintEnd_toEndOf="@+id/passwordInput"
-                app:layout_constraintStart_toStartOf="@+id/passwordInput"
-                app:layout_constraintTop_toBottomOf="@+id/passwordInput" />
+                app:layout_constraintEnd_toEndOf="@+id/passwordLayout"
+                app:layout_constraintStart_toStartOf="@+id/passwordLayout"
+                app:layout_constraintTop_toBottomOf="@+id/passwordLayout" />
 
             <LinearLayout
                 android:id="@+id/signupLinearLayout"
@@ -178,11 +204,11 @@
                 <Button
                     android:id="@+id/loginPageButton"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="48dp"
                     android:layout_marginStart="10dp"
                     android:background="@null"
                     android:fontFamily="@font/sourcesanspro_bold"
-                    android:minWidth="0dp"
+                    android:minWidth="48dp"
                     android:text="@string/login"
                     android:textAlignment="textStart"
                     android:textAllCaps="false"

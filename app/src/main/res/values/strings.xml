@@ -21,4 +21,6 @@
     <string name="example_domain_com">example@domain.com</string>
     <string name="password">Password</string>
     <string name="pass_hint">********</string>
+    <string name="login_subtitle">Welcome back! Enter your credentials to continue using the app.</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
 </resources>

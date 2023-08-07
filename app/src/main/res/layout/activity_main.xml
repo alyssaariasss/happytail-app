@@ -75,15 +75,15 @@
             android:id="@+id/loginPageButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:minWidth="0dp"
-            android:background="@null"
-            android:textColor="@color/accent_orange"
-            android:textAllCaps="false"
-            android:textAlignment="textStart"
             android:layout_marginStart="10dp"
+            android:background="@null"
             android:fontFamily="@font/sourcesanspro_bold"
-            android:textSize="16sp"
-            android:text="@string/login"/>
+            android:minWidth="48dp"
+            android:text="@string/login"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="@color/accent_orange"
+            android:textSize="16sp" />
     </LinearLayout>
 
 
