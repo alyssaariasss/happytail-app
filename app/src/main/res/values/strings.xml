@@ -30,4 +30,5 @@
     <string name="choice2">6-8 hours</string>
     <string name="choice3">8-10 hours</string>
     <string name="choice4">10+ hours</string>
+    <string name="complete">Complete</string>
 </resources>

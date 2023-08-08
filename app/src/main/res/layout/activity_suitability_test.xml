@@ -8,7 +8,7 @@
     tools:context=".SuitabilityTest">
 
     <TextView
-        android:id="@+id/suitabilityTesTitle"
+        android:id="@+id/suitabilityTestTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -22,6 +22,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
+        android:id="@+id/skipButton"
         android:layout_width="70dp"
         android:layout_height="48dp"
         android:background="@drawable/round_rectangle_button"
@@ -31,10 +32,10 @@
         android:textColor="@color/white"
         android:textSize="18sp"
         app:backgroundTint="@color/secondary_teal"
-        app:layout_constraintBottom_toBottomOf="@+id/suitabilityTesTitle"
+        app:layout_constraintBottom_toBottomOf="@+id/suitabilityTestTitle"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/suitabilityTesTitle"
-        app:layout_constraintTop_toTopOf="@+id/suitabilityTesTitle" />
+        app:layout_constraintStart_toEndOf="@+id/suitabilityTestTitle"
+        app:layout_constraintTop_toTopOf="@+id/suitabilityTestTitle" />
 
     <TextView
         android:id="@+id/stepIndicator"
@@ -47,14 +48,14 @@
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/suitabilityTesTitle" />
+        app:layout_constraintTop_toBottomOf="@+id/suitabilityTestTitle" />
 
     <ProgressBar
         android:id="@+id/stepProgress"
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:scaleY="3f"
+        android:scaleY="3.0"
         android:progressBackgroundTint="@color/indicator_inactive"
         android:progressTint="@color/accent_yellow"
         android:progress="10"
