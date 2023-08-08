@@ -23,4 +23,11 @@
     <string name="pass_hint">********</string>
     <string name="login_subtitle">Welcome back! Enter your credentials to continue using the app.</string>
     <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="suitability_test">Suitability Test</string>
+    <string name="a_time">A. Time</string>
+    <string name="question1">How much free time do you have per week?</string>
+    <string name="choice1">3-5 hours</string>
+    <string name="choice2">6-8 hours</string>
+    <string name="choice3">8-10 hours</string>
+    <string name="choice4">10+ hours</string>
 </resources>
