@@ -31,4 +31,8 @@
     <string name="choice3">8-10 hours</string>
     <string name="choice4">10+ hours</string>
     <string name="complete">Complete</string>
+    <string name="suitability_test_completed">Suitability Test \nCompleted</string>
+    <string name="proceed_to_the_homepage">We hope you had a good time taking our suitability test. You can now browse our recommended pets for you or proceed to the homepage.</string>
+    <string name="browse_recommended_pets">Browse Recommended Pets</string>
+    <string name="homepage">Homepage</string>
 </resources>

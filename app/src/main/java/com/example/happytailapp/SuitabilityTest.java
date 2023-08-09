@@ -67,7 +67,6 @@ public class SuitabilityTest extends AppCompatActivity {
                         finish();
                     }
                 }
-
             }
         });
 
