@@ -136,14 +136,15 @@
                 android:layout_height="50dp"
                 android:fontFamily="@font/sourcesanspro_regular"
                 android:text="@string/choice1"
-                android:textColor="@color/black"
+                android:textColor="@drawable/custom_radio_text"
                 android:textAlignment="viewStart"
                 android:textSize="20sp"
-                android:buttonTint="@color/black"
+                android:buttonTint="@drawable/custom_radio_text"
                 android:paddingStart="10dp"
                 android:paddingEnd="10dp"
                 android:layout_marginBottom="15dp"
-                android:background="@drawable/choice_background_inactive"/>
+                android:checked="true"
+                android:background="@drawable/custom_radio_button"/>
 
             <RadioButton
                 android:id="@+id/choice2"
@@ -151,14 +152,14 @@
                 android:layout_height="50dp"
                 android:fontFamily="@font/sourcesanspro_regular"
                 android:text="@string/choice2"
-                android:textColor="@color/black"
+                android:textColor="@drawable/custom_radio_text"
                 android:textAlignment="viewStart"
                 android:textSize="20sp"
-                android:buttonTint="@color/black"
+                android:buttonTint="@drawable/custom_radio_text"
                 android:paddingStart="10dp"
                 android:paddingEnd="10dp"
                 android:layout_marginBottom="15dp"
-                android:background="@drawable/choice_background_inactive"/>
+                android:background="@drawable/custom_radio_button" />
 
             <RadioButton
                 android:id="@+id/choice3"
@@ -166,14 +167,14 @@
                 android:layout_height="50dp"
                 android:fontFamily="@font/sourcesanspro_regular"
                 android:text="@string/choice3"
-                android:textColor="@color/black"
+                android:textColor="@drawable/custom_radio_text"
                 android:textAlignment="viewStart"
                 android:textSize="20sp"
-                android:buttonTint="@color/black"
+                android:buttonTint="@drawable/custom_radio_text"
                 android:paddingStart="10dp"
                 android:paddingEnd="10dp"
                 android:layout_marginBottom="15dp"
-                android:background="@drawable/choice_background_inactive"/>
+                android:background="@drawable/custom_radio_button" />
 
             <RadioButton
                 android:id="@+id/choice4"
@@ -181,52 +182,32 @@
                 android:layout_height="50dp"
                 android:fontFamily="@font/sourcesanspro_regular"
                 android:text="@string/choice4"
-                android:textColor="@color/black"
+                android:textColor="@drawable/custom_radio_text"
                 android:textAlignment="viewStart"
                 android:textSize="20sp"
-                android:buttonTint="@color/black"
+                android:buttonTint="@drawable/custom_radio_text"
                 android:paddingStart="10dp"
                 android:paddingEnd="10dp"
                 android:layout_marginBottom="15dp"
-                android:background="@drawable/choice_background_inactive"/>
+                android:background="@drawable/custom_radio_button" />
         </RadioGroup>
     </LinearLayout>
 
-    <LinearLayout
+    <Button
+        android:id="@+id/nextButton"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:layout_marginStart="40dp"
         android:layout_marginEnd="40dp"
-        android:orientation="horizontal"
-        android:weightSum="2"
+        android:background="@drawable/round_rectangle_button"
+        android:fontFamily="@font/sourcesanspro_regular"
+        android:text="@string/next"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioButtonLayout">
-
-        <Button
-            android:id="@+id/backButton"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@null"
-            android:fontFamily="@font/sourcesanspro_regular"
-            android:text="@string/back"
-            android:textAllCaps="false"
-            android:textColor="@color/black"
-            android:textSize="18sp" />
-
-        <Button
-            android:id="@+id/nextButton"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@drawable/round_rectangle_button"
-            android:fontFamily="@font/sourcesanspro_regular"
-            android:text="@string/next"
-            android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:textSize="18sp" />
-    </LinearLayout>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioButtonLayout" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

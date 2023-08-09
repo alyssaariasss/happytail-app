@@ -3,6 +3,9 @@ package com.example.happytailapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
+import android.content.res.ColorStateList;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -15,13 +18,15 @@ import android.widget.Toast;
 public class SuitabilityTest extends AppCompatActivity {
     TextView stepIndicator, questionTitle, questionText;
     ImageView questionIcon;
-    Button backBtn, nextBtn, skipBtn;
+    Button nextBtn, skipBtn;
     RadioButton choice1, choice2, choice3, choice4;
     ProgressBar stepProgress;
 
     GenerateQuestion generateQuestion = new GenerateQuestion();
 
     private int quesNum = 1;
+
+    String answer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +39,6 @@ public class SuitabilityTest extends AppCompatActivity {
 
         questionIcon = findViewById(R.id.questionIcon);
 
-        backBtn = findViewById(R.id.backButton);
         nextBtn = findViewById(R.id.nextButton);
         skipBtn = findViewById(R.id.skipButton);
 
@@ -45,25 +49,36 @@ public class SuitabilityTest extends AppCompatActivity {
 
         stepProgress = findViewById(R.id.stepProgress);
 
-        backBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-            }
-        });
-
         nextBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                int currentProgress = stepProgress.getProgress();
-                String currentStep = String.valueOf(quesNum);
+                if (!CheckAnswer()) {
+                    int currentProgress = stepProgress.getProgress();
+                    stepProgress.setProgress(currentProgress+10);
 
-                stepIndicator.setText(currentStep + " out of 10");
-                stepProgress.setProgress(currentProgress+10);
-                UpdateQuestion();
+                    UpdateQuestion();
+
+                    String currentStep = String.valueOf(quesNum);
+                    stepIndicator.setText(currentStep + " out of 10");
+
+                    if (quesNum == 10) {
+                        Intent intent = new Intent(SuitabilityTest.this, TestComplete.class);
+                        startActivity(intent);
+                        finish();
+                    }
+                }
+
             }
         });
 
+        skipBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(SuitabilityTest.this, Home.class);
+                startActivity(intent);
+                finish();
+            }
+        });
     }
 
     private void UpdateQuestion() {
@@ -79,6 +94,26 @@ public class SuitabilityTest extends AppCompatActivity {
 
         if (quesNum == 10) {
             nextBtn.setText(R.string.complete);
+        }
+    }
+
+    private boolean CheckAnswer() {
+        // for storing answers to database
+        if (choice1.isChecked()) {
+            answer = choice1.getText().toString().trim();
+            return false;
+        } if (choice2.isChecked()) {
+            answer = choice2.getText().toString().trim();
+            return false;
+        } if (choice3.isChecked()) {
+            answer = choice3.getText().toString().trim();
+            return false;
+        } if (choice4.isChecked()) {
+            answer = choice4.getText().toString().trim();
+            return false;
+        } else {
+            Toast.makeText(SuitabilityTest.this, "Select your answer.", Toast.LENGTH_SHORT).show();
+            return true;
         }
     }
 }
