@@ -35,4 +35,8 @@
     <string name="proceed_to_the_homepage">We hope you had a good time taking our suitability test. You can now browse our recommended pets for you or proceed to the homepage.</string>
     <string name="browse_recommended_pets">Browse Recommended Pets</string>
     <string name="homepage">Homepage</string>
+    <string name="home">Home</string>
+    <string name="all_pets">All Pets</string>
+    <string name="shelters">Shelters</string>
+    <string name="blogs">Blogs</string>
 </resources>
