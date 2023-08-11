@@ -3,18 +3,18 @@
 
     <item
         android:id="@+id/home"
-        android:icon="@drawable/home_nav"
+        android:icon="@drawable/custom_home"
         android:title="@string/home" />
     <item
         android:id="@+id/pets"
-        android:icon="@drawable/paw"
+        android:icon="@drawable/custom_pets"
         android:title="@string/all_pets" />
     <item
         android:id="@+id/shelter"
-        android:icon="@drawable/location"
+        android:icon="@drawable/custom_shelter"
         android:title="@string/shelters" />
     <item
         android:id="@+id/blog"
-        android:icon="@drawable/comment"
+        android:icon="@drawable/custom_blog"
         android:title="@string/blogs" />
 </menu>

@@ -52,11 +52,11 @@ public class SuitabilityTest extends AppCompatActivity {
         nextBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (!CheckAnswer()) {
+                if (!checkAnswer()) {
                     int currentProgress = stepProgress.getProgress();
                     stepProgress.setProgress(currentProgress+10);
 
-                    UpdateQuestion();
+                    updateQuestion();
 
                     String currentStep = String.valueOf(quesNum);
                     stepIndicator.setText(currentStep + " out of 10");
@@ -80,7 +80,7 @@ public class SuitabilityTest extends AppCompatActivity {
         });
     }
 
-    private void UpdateQuestion() {
+    private void updateQuestion() {
         questionTitle.setText(generateQuestion.getCategories(quesNum));
         questionIcon.setImageResource(generateQuestion.getIcons(quesNum));
         questionText.setText(generateQuestion.getQuestions(quesNum));
@@ -96,7 +96,7 @@ public class SuitabilityTest extends AppCompatActivity {
         }
     }
 
-    private boolean CheckAnswer() {
+    private boolean checkAnswer() {
         // for storing answers to database
         if (choice1.isChecked()) {
             answer = choice1.getText().toString().trim();
