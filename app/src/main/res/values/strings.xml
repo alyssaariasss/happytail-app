@@ -42,4 +42,12 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="recommended_pets_for_you">Recommended Pets for You</string>
+    <string name="empty" />
+    <string name="first_name">Juana</string>
+    <string name="last_name">dela Cruz</string>
+    <string name="user_status">Pending Appointment</string>
+    <string name="location">Location</string>
+    <string name="location_text">Manila, Philippines</string>
+    <string name="good_morning_text">Good morning, Juana!</string>
+    <string name="pets_near_you">Pets Near You</string>
 </resources>

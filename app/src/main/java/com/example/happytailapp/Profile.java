@@ -5,35 +5,20 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
 
-import com.example.happytailapp.databinding.ActivityRecommendedPetsBinding;
+import com.example.happytailapp.databinding.ActivityProfileBinding;
 
-public class RecommendedPets extends AppCompatActivity {
-    Button profileBtn;
+public class Profile extends AppCompatActivity {
 
-    ActivityRecommendedPetsBinding binding;
+    ActivityProfileBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        binding = ActivityRecommendedPetsBinding.inflate(getLayoutInflater());
+        binding = ActivityProfileBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-
-        profileBtn = findViewById(R.id.profileButton);
-
-        profileBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(RecommendedPets.this, Profile.class);
-                startActivity(intent);
-                finish();
-            }
-        });
 
         binding.bottomNavigationView.setOnItemSelectedListener(item -> {
             switch (item.getItemId()) {
