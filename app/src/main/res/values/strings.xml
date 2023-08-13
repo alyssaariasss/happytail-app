@@ -50,4 +50,7 @@
     <string name="location_text">Manila, Philippines</string>
     <string name="good_morning_text">Good morning, Juana!</string>
     <string name="pets_near_you">Pets Near You</string>
+    <string name="young">Young</string>
+    <string name="max">Max</string>
+    <string name="_0_5km_away">0.5km away</string>
 </resources>
