@@ -50,17 +50,20 @@
             app:layout_constraintTop_toTopOf="parent"/>
 
         <TextView
+            android:id="@+id/petName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/max"
             android:fontFamily="@font/quicksand_bold"
             android:textColor="@color/black"
             android:textSize="18sp"
+            android:textAlignment="viewStart"
             app:layout_constraintStart_toEndOf="@id/petGenderImg"
             app:layout_constraintTop_toTopOf="@id/petGenderImg"
             app:layout_constraintBottom_toBottomOf="@id/petGenderImg"/>
 
         <TextView
+            android:id="@+id/petLocation"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/_0_5km_away"

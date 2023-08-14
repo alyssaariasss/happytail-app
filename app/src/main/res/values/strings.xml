@@ -53,4 +53,6 @@
     <string name="young">Young</string>
     <string name="max">Max</string>
     <string name="_0_5km_away">0.5km away</string>
+    <string name="view_all_pets">View All Pets</string>
+    <string name="not_exactly_what_you_re_looking_for">Not exactly what you\'re looking for?</string>
 </resources>
