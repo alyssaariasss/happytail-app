@@ -55,4 +55,7 @@
     <string name="_0_5km_away">0.5km away</string>
     <string name="view_all_pets">View All Pets</string>
     <string name="not_exactly_what_you_re_looking_for">Not exactly what you\'re looking for?</string>
+    <string name="help_out_rescue_shelters">Help Out Rescue Shelters</string>
+    <string name="sinagtala_shelter">Sinagtala Shelter</string>
+    <string name="de_kattenkliniek">De KattenKliniek</string>
 </resources>
